@@ -74,7 +74,7 @@ if ($generateXML) {
 
 // 5. membaca file XML
 // membuka file
-$url    = $_SERVER['localhost']."/ws/xml/bab4/mahasiswa.xml";
+$url    = "http://localhost/ws/xml/bab4/mahasiswa.xml";
 $client = curl_init($url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($client);
