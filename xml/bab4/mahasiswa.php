@@ -1,7 +1,7 @@
 <?php
 
 //1.koneksi database
-$konek = mysql_connect("10.10.4.28","root","") or die(mysql_error());
+$konek = mysql_connect("localhost","root","") or die(mysql_error());
 $db = mysql_select_db("module_sit_2014-09-24");
 
 if ($konek) {
