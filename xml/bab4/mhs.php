@@ -3,9 +3,13 @@
 	include "koneksi.php";
 	
 	//cek path element
-	$path = $_SERVER[PATH_INFO];
+	$path_params = array();
+	$self = $_SERVER['PHP_SELF'];
+	$extension = substr($self, strlen($self)-3);
+	$path = ($extension=='php') ? NULL : $_SERVER['PATH_INFO'];
+	
 	if ($path != null){
-		$path_params = spliti("/", $path);
+		$path_params = explode("/", $path);
 		}
 		
 	//metode request untuk GET
