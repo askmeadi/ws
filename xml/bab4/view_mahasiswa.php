@@ -4,13 +4,14 @@
 	</head>
 	<body>
 		<?php
-			//include koneksi.php
+			//include "koneksi.php";
 			$url = 'http://localhost/ws/xml/bab4/mhs.php';
 			
 			//menghambil data string dari resources
 			$client = curl_init($url);
 			curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
 			$response = curl_exec($client);
+			curl_close($client);
 			
 			$datamahasiswaxml = simplexml_load_string($response);
 			
