@@ -10,7 +10,7 @@
 	//register a function that works on server
 	$server->register('login_ws',
 	array('username' => 'xsd:string',
-	'password' => 'xsd: string'), //output
+	'password' => 'xsd:string'), //output
 	array('return' => 'xsd: string'),
 	'urn:server', //namespace
 	'urn:server#loginServer', //soapaction
