@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 01, 2014 at 02:56 AM
+-- Generation Time: Oct 08, 2014 at 02:59 AM
 -- Server version: 5.5.25a
 -- PHP Version: 5.4.4
 
@@ -17,33 +17,28 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `module_sit_2014-09-24`
+-- Database: `data_mahasiswa`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Table structure for table `user`
 --
 
-CREATE TABLE IF NOT EXISTS `mahasiswa` (
-  `nim` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `nama` varchar(100) DEFAULT NULL,
-  `alamat` varchar(100) DEFAULT NULL,
-  `prodi` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`nim`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=988 ;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(11) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `mahasiswa` (`nim`, `nama`, `alamat`, `prodi`) VALUES
-(123, 'andi', 'jogja', 'komsi'),
-(342, 'joko', 'sleman', 'rekmed'),
-(432, 'ica', 'bantul', 'elins'),
-(765, 'ela', 'solo', 'metins'),
-(987, 'fery', 'jakarta', 'komsi');
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
