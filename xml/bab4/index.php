@@ -9,8 +9,8 @@
 		}
 ?>
 
-	<link href="asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+	<link href="bootstrap/asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="bootstrap/asset/js/bootstrap.min.js"></script>
 	<body>
 		<div class="navbar navbar fixed-top">
 			<div class="navbar-inner">
@@ -18,7 +18,7 @@
 				<div class="span2">
 					<a class="brand" href="#">&nbsp; &nbsp E-Learning</a>
 				</div>
-			<div class="nav-collapse">
+			<div class="nav-coll<link href="asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">apse">
 			<ul class="nav">
 				<li class="divider"></li>
 					<li class="dropdown offset7">
