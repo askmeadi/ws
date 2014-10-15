@@ -27,7 +27,6 @@
 	$db->connect('localhost', 'root', '', 'data_mahasiswa');
 	//cek username dan password dari db
 	$sql = $db->Execute("SELECT * FROM user WHERE username = '$username' AND password = '$password'");
-	print_r($sql); die();
 	
 	//cek adanya user dan password di db
 	if($sql->RecordCount() >= 1)
