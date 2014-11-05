@@ -9,7 +9,7 @@
 		}
 ?>
 
-	<link href="bootstrap/asset/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="SIT/ws.git/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="bootstrap/asset/js/bootstrap.min.js"></script>
 	<body>
 		<div class="navbar navbar fixed-top">
