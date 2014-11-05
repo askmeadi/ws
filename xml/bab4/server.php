@@ -3,7 +3,7 @@
 	require_once('nusoap/lib/nusoap.php');
 	require_once('adodb/adodb.inc.php');
 	
-	$server = new nusoap_server;
+	$server = new nusoap_server();
 	$server->configureWSDL('server', 'urn:server');
 	$server->wsdl->schemaTargetNamespace = 'urn:server';
 	
@@ -24,9 +24,9 @@
 	$password = md5($password);
 	//buat koneksi
 	$db = NewADOConnection('mysql');
-	$db->connect('localhost', 'root', '', 'data_mahasiswa');
+	$db -> connect('localhost', 'root', '', 'data_mahasiswa');
 	//cek username dan password dari db
-	$sql = $db->Execute("SELECT * FROM user WHERE username = '$username' AND password = '$password'");
+	$sql = $db -> Execute("SELECT * FROM user WHERE username = '$username' AND password = '$password'");
 	
 	//cek adanya user dan password di db
 	if($sql->RecordCount() >= 1)
